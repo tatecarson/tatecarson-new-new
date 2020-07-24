@@ -1,0 +1,24 @@
+{
+  "connectlinks": [
+    {
+      "name": "Github",
+      "url": "https://github.com/tatecarson"
+    },
+    {
+      "name": "Google Scholar",
+      "url": "https://scholar.google.com/citations?user=XXFcT98AAAAJ&hl=en"
+    },
+    {
+      "name": "Twitter",
+      "url": "https://twitter.com/tatecarson"
+    },
+    {
+      "name": "Keybase",
+      "url": "https://keybase.io/tatecarson"
+    },
+    {
+      "name": "Email",
+      "url": "mailto:tatecarson@pm.me"
+    }
+  ]
+}
