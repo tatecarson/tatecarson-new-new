@@ -31,8 +31,12 @@
         </div>
         <div class="xs-text-left xs-p2 xs-border" :class="signupAboutSize">
             <div class="item">
-                <div v-show="siteDescription" class="footer__heading xs-mb2">About</div>
-                <p v-show="siteDescription">{{siteDescription}}</p>
+           <div v-show="connectData" class="footer__heading xs-mb2">Connect</div>
+                <ul class="list-unstyled">
+                    <li v-show="connectData" v-for="(c,i) in connectData" :key="i">
+                        <a :href="c.url">{{c.name}}</a>
+                    </li>
+                </ul>
             </div>
         </div>
         <div v-if="signupBoolean" class="c-25 xs-text-left xs-p2 xs-border">
@@ -50,17 +54,12 @@
         </div>
         <div class="xs-text-left xs-p2 xs-border" :class="signupAboutSize">
             <div class="item">
-                <div v-show="connectData" class="footer__heading xs-mb2">Connect</div>
-                <ul class="list-unstyled">
-                    <li v-show="connectData" v-for="(c,i) in connectData" :key="i">
-                        <a :href="c.url">{{c.name}}</a>
-                    </li>
-                </ul>
+     
             </div>
         </div>
         <div class="xs-text-left xs-p2 xs-border" :class="signupAboutSize">
             <div class="item">
-                <div class="footer__heading xs-mb2">Add something else here!</div>
+                <!-- <div class="footer__heading xs-mb2">Add something else here!</div> -->
 
                 
 
