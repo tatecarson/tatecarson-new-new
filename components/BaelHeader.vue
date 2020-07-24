@@ -22,7 +22,7 @@
           </span> &nbsp;
 
           <!-- NOTE: only show if needed -->
-          <span v-if="this.$route.fullPath.indexOf('blog') > -1">
+          <span v-show="this.$route.fullPath.indexOf('blog') > -1">
             <span class="text-gray-lightest"> > </span> &nbsp;
             <nuxt-link :to="`/category/${this.$store.state.theCategory.replace(/\s+/g, '-').toLowerCase()}`">{{this.$store.state.theCategory}}</nuxt-link>
 
