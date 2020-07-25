@@ -57,15 +57,21 @@ export default {
           this.items2.splice(0);
           for (var i = 0, j = 12; i < j; i++) {
             let api = this.allitems[this.count];
-
             this.items2.push(api);
           
             this.count++;
           }
-          this.items2.splice(-5, 5)
-          this.items2.reverse()
+
+          this.items2 = this.items2.filter(function( element ) {
+             return element !== undefined;
+          });
+          // this.items2.splice(-5, 5)
+          if(this.$route.name === "index") {
+              this.items2.reverse()
+          }
+   
           this.busy = false;
-        console.log(this.items2, this.count)
+        console.log(this.items2, this.count, this.$route.name)
       }
     },
 
