@@ -59,11 +59,13 @@ export default {
             let api = this.allitems[this.count];
 
             this.items2.push(api);
+          
             this.count++;
           }
-
+          this.items2.splice(-5, 5)
+          this.items2.reverse()
           this.busy = false;
-        
+        console.log(this.items2, this.count)
       }
     },
 
