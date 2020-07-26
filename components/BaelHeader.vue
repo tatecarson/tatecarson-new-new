@@ -4,7 +4,7 @@
 
       <div class="c-4 xs-text-left xs-p2 sm-border-right">
         <div class="item">
-          <nuxt-link class="sitename" to="/" exact>{{headerSiteName}}</nuxt-link>
+          <nuxt-link class="sitename" to="/" exact><h1>{{headerSiteName}}</h1></nuxt-link>
         </div>
       </div>
 
@@ -109,7 +109,7 @@ nav {
   font-family: "Archivo Black", sans-serif;
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 11px;
 }
 @media only screen and (max-width: 40rem) {
   .results {
