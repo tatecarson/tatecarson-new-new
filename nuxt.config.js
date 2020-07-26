@@ -105,7 +105,8 @@ module.exports = {
 
   }, 
   render: {
-    resourceHints: true
+    resourceHints: true, 
+    crossorigin: 'crossorigin'
   }
 }
 
