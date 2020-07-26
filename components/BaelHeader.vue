@@ -4,7 +4,7 @@
 
       <div class="c-4 xs-text-left xs-p2 sm-border-right">
         <div class="item">
-          <nuxt-link class="sitename" to="/" exact><h1>{{headerSiteName}}</h1></nuxt-link>
+          <nuxt-link class="sitename" to="/" exact><h1 style="margin-top: 0">{{headerSiteName}}</h1></nuxt-link>
         </div>
       </div>
 
